@@ -37,10 +37,10 @@ public class PruebaFecha {
 				if(fecha1.obtMes() == mes){//Inicio if 3
 					
 					System.out.print("AÑO: ");
-					int año = input.nextInt();
-					fecha1.estAño(año);
+					int ano = input.nextInt();
+					fecha1.estAno(ano);
 					
-					if(año > 0){//Inicio if 4
+					if(ano > 0){//Inicio if 4
 						System.out.println();
 						System.out.print("FECHA ASIGNADA");
 						fecha1.monstrarFecha();

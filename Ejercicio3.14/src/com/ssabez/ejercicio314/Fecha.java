@@ -4,9 +4,9 @@ public class Fecha {
 	
 	private int dia;
 	private int mes;
-	private int año;
+	private int ano;
 	
-	public Fecha(int dia, int mes, int año){
+	public Fecha(int dia, int mes, int ano){
 		
 		
 		if(dia > 0 && dia <= 31){
@@ -35,7 +35,7 @@ public class Fecha {
 						this.mes = mes;
 					}
 					else{
-						System.out.println("==FECHA ERRONEA== ---> DÍA no coicide con MES ¡¡Corregir argumentos!!");
+						System.out.println("==FECHA ERRONEA== ---> DIA no coicide con MES ¡¡Corregir argumentos!!");
 						this.dia = 0; //Esto se hace para q no se imprima el valor ingresado, no valido para el mes
 					}
 					break;
@@ -51,7 +51,7 @@ public class Fecha {
 						this.mes = mes;
 					}
 					else{
-						System.out.println("==FECHA ERRONEA== ---> DÍA no coicide con MES ¡¡Corregir argumentos!!");
+						System.out.println("==FECHA ERRONEA== ---> DIA no coicide con MES ¡¡Corregir argumentos!!");
 						this.dia = 0;
 					}
 					break;
@@ -67,7 +67,7 @@ public class Fecha {
 						this.mes = mes;
 					}
 					else{
-						System.out.println("==FECHA ERRONEA== ---> DÍA no coicide con MES ¡¡Corregir argumentos!!");
+						System.out.println("==FECHA ERRONEA== ---> DIA no coicide con MES ¡¡Corregir argumentos!!");
 						this.dia = 0;
 					}
 					break;
@@ -88,7 +88,7 @@ public class Fecha {
 						this.mes = mes;
 					}
 					else{
-						System.out.println("==FECHA ERRONEA== ---> DÍA no coicide con MES ¡¡Corregir argumentos!!");
+						System.out.println("==FECHA ERRONEA== ---> DIA no coicide con MES ¡¡Corregir argumentos!!");
 						this.dia = 0;
 					}
 					break;
@@ -104,7 +104,7 @@ public class Fecha {
 						this.mes = mes;
 					}
 					else{
-						System.out.print("==FECHA ERRONEA== ---> DÍA no coicide con MES ¡¡Corregir argumentos!!");
+						System.out.print("==FECHA ERRONEA== ---> DIA no coicide con MES ¡¡Corregir argumentos!!");
 						this.dia = 0;
 					}
 					break;
@@ -120,9 +120,9 @@ public class Fecha {
 		
 			if(this.mes != 0){//Inicio de if 2, anidado dentro de if 1
 		
-				if(año > 0){//Inicio de if año		
+				if(ano > 0){//Inicio de if año		
 					
-					this.año = año;
+					this.ano = ano;
 					System.out.println("==FECHA ACTUAL==");
 					
 				}//Fin de if año
@@ -131,7 +131,7 @@ public class Fecha {
 					
 					this.dia = 0;
 					this.mes = 0;
-					System.out.println("==FECHA ERRONEA== ---> AÑO invalido, debe ser mayor a cero ¡¡Corregir argumentos!!");
+					System.out.println("==FECHA ERRONEA== ---> ANO invalido, debe ser mayor a cero ¡¡Corregir argumentos!!");
 					
 				}//Fin de else año
 		
@@ -269,14 +269,14 @@ public class Fecha {
 	}//Fin de metodo
 	
 
-	public int obtAño() {
-		return año;
+	public int obtAno() {
+		return ano;
 	}
 
-	public void estAño(int año) {
+	public void estAno(int ano) {
 		
-		if(año > 0){
-			this.año = año;
+		if(ano > 0){
+			this.ano = ano;
 		}
 		else{
 			System.out.print("===DATO ERRONEO, ");
@@ -285,7 +285,7 @@ public class Fecha {
 	}
 	
 	public void monstrarFecha(){
-		System.out.printf("---> %d/%d/%d", dia, mes, año);
+		System.out.printf("---> %d/%d/%d", dia, mes, ano);
 	}
 
 }
